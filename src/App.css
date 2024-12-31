@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* App Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.app-header {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/* Editor Section */
+.editor-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px 0;
+  background: linear-gradient(120deg, #2af598, #009efd);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Toolbar Buttons */
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.toolbar-button {
+  background: linear-gradient(45deg, #ff6a95, #ff758c);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toolbar-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Color-Specific Buttons */
+.toolbar-button.red {
+  background: linear-gradient(45deg, #ff6a6a, #ff8c75);
+}
+
+.toolbar-button.blue {
+  background: linear-gradient(45deg, #6a95ff, #758cff);
+}
+
+.toolbar-button.green {
+  background: linear-gradient(45deg, #6aff95, #8cff75);
+}
+
+/* Editor Container */
+.editor-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 300px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editor-container p {
+  margin: 0;
+}
+
+/* Footer Section */
+.app-footer {
+  width: 100%;
+  background: linear-gradient(90deg, #6a95ff, #6aff95);
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  border-top: 2px solid #fff;
+}
+
+/* Default Buttons (Redundant CSS Removed) */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+div[contenteditable="true"] {
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}

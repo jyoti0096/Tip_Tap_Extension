@@ -1,0 +1,132 @@
+/* Global Reset */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Added gradient background */
+  color: #333;
+}
+
+/* Styling for Code Blocks */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background: #f4f4f4; /* Added background for better visibility */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styling */
+.app-header {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c); /* Updated gradient */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+}
+
+/* Editor Section */
+.editor-section {
+  width: 90%;
+  max-width: 800px;
+  background: linear-gradient(120deg, #2af598, #009efd); /* Stylish gradient */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Toolbar Buttons */
+.toolbar-button {
+  background: linear-gradient(45deg, #ff6a95, #ff758c);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toolbar-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.toolbar-button.red {
+  background: linear-gradient(45deg, #ff6a6a, #ff8c75); /* Red button */
+}
+
+.toolbar-button.blue {
+  background: linear-gradient(45deg, #6a95ff, #758cff); /* Blue button */
+}
+
+.toolbar-button.green {
+  background: linear-gradient(45deg, #6aff95, #8cff75); /* Green button */
+}
+
+/* Editor Container */
+.editor-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 300px;
+  font-size: 1rem;
+  color:white;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensures text aligns left */
+}
+
+/* Footer */
+.app-footer {
+  width: 100%;
+  background: linear-gradient(90deg, #6a95ff, #6aff95); /* Footer gradient */
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  border-top: 2px solid #fff;
+  margin-top: 20px;
+}
+
+/* Buttons Inside ContentEditable (Optional Styling) */
+div[contenteditable="true"] {
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Additional styling for better focus */
+div[contenteditable="true"]:focus {
+  outline: 2px solid #4facfe; /* Highlighted focus */
+  background-color:white;
+} 
